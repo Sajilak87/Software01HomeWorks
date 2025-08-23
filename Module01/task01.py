@@ -1,2 +1,2 @@
-user_name = input("Enter your name: ")
-print(f"hello , {user_name}!")
+user_name = "Sajith Liyanage"
+print(f"Hello , {user_name}!")

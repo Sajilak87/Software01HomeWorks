@@ -1,5 +1,4 @@
 user_name = input("Enter your name: ")
-print(f"hello , {user_name}!")
+print(f"Hello , {user_name}!")
 
-print(f"hello , {user_name}!")
 
