@@ -2,18 +2,18 @@ import mysql.connector
 
 # Establish database connection
 connection = mysql.connector.connect(
-         host='127.0.0.1',
-         port=3306,
-         database='flight_game',
-         user='root',
-         password='password',
-         autocommit=True
+    host='127.0.0.1',
+    port=3306,
+    database='flight_game',
+    user='root',
+    password='password',
+    autocommit=True
 )
 
 icao = input("Enter the ICAO code of an airport: ")
 
 cursor = connection.cursor()
-sql = "SELECT name, municipality FROM airport WHERE ident=%s"
+sql = "SELECT name, municipality FROM airport WHERE ident = %s"
 cursor.execute(sql, (icao,))
 result = cursor.fetchone()
 
